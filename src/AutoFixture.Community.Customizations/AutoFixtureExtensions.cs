@@ -1,4 +1,4 @@
-﻿namespace AutoFixture.Customizations;
+﻿namespace AutoFixture.Community.Customizations;
 
 /// <summary>
 /// Extension methods for <see cref="IFixture"/> models.

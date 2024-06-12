@@ -28,9 +28,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{A4D160B2
 		build\GetBuildVersion.psm1 = build\GetBuildVersion.psm1
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Customizations", "src\AutoFixture.Customizations\AutoFixture.Customizations.csproj", "{5BB0DAE5-206F-4D9D-8DA5-A3AF8969F624}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.Customizations", "src\AutoFixture.Community.Customizations\AutoFixture.Community.Customizations.csproj", "{5BB0DAE5-206F-4D9D-8DA5-A3AF8969F624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Customizations.Tests", "tests\AutoFixture.Customizations.Tests\AutoFixture.Customizations.Tests.csproj", "{69B0DF7E-5057-4513-B08E-295D8C593A63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.Customizations.Tests", "tests\AutoFixture.Community.Customizations.Tests\AutoFixture.Community.Customizations.Tests.csproj", "{69B0DF7E-5057-4513-B08E-295D8C593A63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

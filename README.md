@@ -1,6 +1,6 @@
-# AutoFixture Customizations
+# AutoFixture Community Customizations
 
-[![.NET](https://github.com/Owen-Krueger/AutoFixture.Customizations/actions/workflows/dotnet.yaml/badge.svg)](https://github.com/Owen-Krueger/AutoFixture.Customizations/actions/workflows/dotnet.yaml)
+[![.NET](https://github.com/Owen-Krueger/AutoFixture.Community.Customizations/actions/workflows/dotnet.yaml/badge.svg)](https://github.com/Owen-Krueger/AutoFixture.Community.Customizations/actions/workflows/dotnet.yaml)
 
 ## IgnoreAutoFixture Attribute
 

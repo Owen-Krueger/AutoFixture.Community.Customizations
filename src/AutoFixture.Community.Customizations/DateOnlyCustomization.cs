@@ -1,4 +1,4 @@
-﻿namespace AutoFixture.Customizations;
+﻿namespace AutoFixture.Community.Customizations;
 
 /// <summary>
 /// Customizes AutoFixture to automatically handle <see cref="DateOnly"/> properties.
