@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using AutoFixture.Kernel;
 
-namespace AutoFixture.Customizations;
+namespace AutoFixture.Community.Customizations;
 
 /// <summary>
 /// Customizes AutoFixture to ignore properties with the <see cref="IgnoreAutoFixtureAttribute"/> attribute.

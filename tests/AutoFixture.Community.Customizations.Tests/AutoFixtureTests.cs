@@ -1,3 +1,5 @@
+using AutoFixture.Community.Customizations;
+
 namespace AutoFixture.Customizations.Tests;
 
 public class AutoFixtureTests
