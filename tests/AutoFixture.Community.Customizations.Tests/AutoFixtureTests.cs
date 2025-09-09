@@ -40,27 +40,53 @@ public class AutoFixtureTests
 
         Assert.That(model.Time, Is.Not.Null);
     }
-}
 
-public class TestModel
-{
-    public InnerModel? IncludedModel { get; set; }
+    [Test]
+    public void OmitCircularReferences_ModelWithCircularDependency_ExpectedModelInstantiated()
+    {
+        var fixture = new Fixture();
+        fixture.OmitCircularReferences();
+        var model = fixture.Create<TestModelWithCircularDependency1>();
 
-    [IgnoreAutoFixture]
-    public InnerModel? OmittedModel { get; set; }
+        Assert.Multiple(() =>
+        {
+            Assert.That(model.Model, Is.Not.Null);
+            Assert.That(model.Model.Model, Is.Null);
+        });
+    }
 
-    [IgnoreAutoFixture]
-    public InnerModel? ExplicitlyIncludedModel { get; set; }
-}
+    public class TestModel
+    {
+        public long Test { get; set; }
+        
+        public InnerModel? IncludedModel { get; set; }
 
-public class InnerModel { }
+        [IgnoreAutoFixture] public InnerModel? OmittedModel { get; set; }
 
-public class TestModelWithDateOnly
-{
-    public DateOnly? Date { get; set; }
-}
+        [IgnoreAutoFixture] public InnerModel? ExplicitlyIncludedModel { get; set; }
+    }
 
-public class TestModelWithTimeOnly
-{
-    public TimeOnly? Time { get; set; }
+    public class InnerModel
+    {
+    }
+
+    public class TestModelWithDateOnly
+    {
+        public DateOnly? Date { get; set; }
+    }
+
+    public class TestModelWithTimeOnly
+    {
+        public TimeOnly? Time { get; set; }
+    }
+
+    public class TestModelWithCircularDependency1
+    {
+        public TestModelWithCircularDependency2 Model { get; set; } = new();
+    }
+
+    public class TestModelWithCircularDependency2
+    {
+        public TestModelWithCircularDependency1 Model { get; set; } = new();
+    }
 }
