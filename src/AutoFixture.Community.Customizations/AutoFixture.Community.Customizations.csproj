@@ -4,19 +4,20 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>1.1.0</Version>
+        <Version>1.2.0</Version>
         <Title>AutoFixture.Community.Customizations</Title>
         <Authors>Owen Krueger</Authors>
         <RootNamespace>AutoFixture.Community.Customizations</RootNamespace>
         <Description>Useful AutoFixture Customizations</Description>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageProjectUrl>https://github.com/Owen-Krueger/AutoFixture.Community.Customizations</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageTags>AutoFixture;DateOnly;TimeOnly</PackageTags>
         <RepositoryUrl>https://github.com/Owen-Krueger/AutoFixture.Community.Customizations</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageReleaseNotes>https://github.com/Owen-Krueger/AutoFixture.Community.Customizations/releases/tag/v1.1.0</PackageReleaseNotes>
+        <PackageReleaseNotes>https://github.com/Owen-Krueger/AutoFixture.Community.Customizations/releases/tag/v1.2.0</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
